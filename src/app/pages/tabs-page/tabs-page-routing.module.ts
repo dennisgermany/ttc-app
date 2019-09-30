@@ -10,6 +10,15 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'ttc',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../ttc/ttc.module').then(m => m.TtcModule)
+          }
+        ]
+      },
+      {
         path: 'schedule',
         children: [
           {
@@ -71,4 +80,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class TabsPageRoutingModule { }
-

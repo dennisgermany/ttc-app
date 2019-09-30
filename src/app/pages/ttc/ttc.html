@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-title>Ttc</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    hello this is a test page
+  <ion-button (click)="doit()"></ion-button>
+  <ul>
+    <li *ngFor="let entry of data; index as i">{{entry.day}} {{entry.date}}</li>
+  </ul>
+</ion-content>

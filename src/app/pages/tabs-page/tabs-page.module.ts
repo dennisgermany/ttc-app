@@ -11,9 +11,11 @@ import { ScheduleModule } from '../schedule/schedule.module';
 import { SessionDetailModule } from '../session-detail/session-detail.module';
 import { SpeakerDetailModule } from '../speaker-detail/speaker-detail.module';
 import { SpeakerListModule } from '../speaker-list/speaker-list.module';
+import {TtcModule} from "../ttc/ttc.module";
 
 @NgModule({
   imports: [
+    TtcModule,
     AboutModule,
     CommonModule,
     IonicModule,
@@ -28,4 +30,4 @@ import { SpeakerListModule } from '../speaker-list/speaker-list.module';
     TabsPage,
   ]
 })
-export class TabsModule { }
+export class TabsPageModule { }
